@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+<title>{% block title %}Todos Lists{% endblock %}</title>
+
+{% block content %}
+<h2>Todos List</h2>
+{% for each_todo in todo_list %}
+{{ forloop.counter }} - <a href="{{ each_todo.get_absolute_url }}">{{ each_todo.todo_name }}</a>:
+{{ each_todo.todo_text | truncatewords:7 }} <br><br>
+
+{% endfor %}
+<br>
+<a href="{% url 'create-todo' %}"><input type="button" class="btn" value="Create new todo"></a>
+
+{% endblock %}

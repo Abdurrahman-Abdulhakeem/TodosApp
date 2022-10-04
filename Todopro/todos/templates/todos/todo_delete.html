@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+<title>{% block title %}Create Todos{% endblock %}</title>
+
+{% block content %}
+
+<form action="." method="post">
+    <h2 class="head">Do you want to delete Todo "{{ todo.todo_name }}"</h2>
+    {{ todo.as_p }}
+    {% csrf_token %}
+    <input type="submit" value="Delete">
+</form>
+<br>
+<a href="../" class="btn">Back</a>
+
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+<title>{% block title %}Todos Lists{% endblock %}</title>
+
+{% block content %}
+<h1>{{ todo_detail.todo_name }}</h1>
+<p>{{ todo_detail.todo_text }}</p>
+<small>{{ todo_detail.created_at }}</small>
+<br><br>
+<a href="/todos/list/detail/{{ todo_detail.id }}/delete"><input type="button" class="btn" value="Delete Todo"></a>
+<a href="../../" class="btn">Back</a>
+
+{% endblock %}

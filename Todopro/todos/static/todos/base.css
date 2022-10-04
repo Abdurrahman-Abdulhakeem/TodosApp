@@ -1,0 +1,60 @@
+body {
+    color: green;
+}
+
+form {
+width: 350px;
+background: #ccc;
+padding: 30px 10px;
+}
+
+label {
+display: block;
+padding: 10px 30px;
+font-size: 17px;
+}
+
+input[type='submit'] {
+    padding: 10px 30px;
+    background: linear-gradient(to right, green, #12c064);
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    color:#fff;
+    margin: 10px 30px;
+}
+
+input[type='text'] {
+    width: 80%;
+    margin: 0 30px;
+    background: #ccc;
+    border: none;
+    border-bottom: 1px solid #f4f4f4;
+    font-size: 16px;
+    color: #333;
+}
+input[type='text']:focus, textarea:focus {
+    outline: none;
+}
+
+textarea {
+    width: 80%;
+    margin: 0 30px;
+    background: #f4f4f4;
+    border: none;
+    font-size: 16px;
+    color: #333;
+}
+
+.head {
+    margin: 0 30px;
+}
+
+.btn {
+    background: #333;
+    padding: 7px 20px;
+    border-radius: 7px;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+}

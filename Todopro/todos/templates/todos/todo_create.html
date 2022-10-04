@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+<title>{% block title %}Create Todos{% endblock %}</title>
+
+{% block content %}
+<form action="." method="post">
+    <h2 class="head">Create Todo</h2>
+    {{ form.as_p }}
+    {% csrf_token %}
+    <input type="submit" value="Create Todo">
+</form>
+<br>
+<a href="../" class="btn">Back</a>
+
+{% endblock %}
